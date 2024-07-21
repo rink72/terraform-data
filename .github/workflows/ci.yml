@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  tag:
+  ci:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,6 +22,10 @@ jobs:
 
       - name: Terraform fmt
         run: terraform fmt -check
+        working-directory: tests
+
+      - name: Terraform init
+        run: terraform init
         working-directory: tests
 
       - name: Terraform plan
