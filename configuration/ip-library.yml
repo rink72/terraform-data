@@ -1,0 +1,6 @@
+google:
+  - 8.8.8.8
+  - 4.4.4.4
+
+azure_dns_servers:
+  - 10.0.0.3
