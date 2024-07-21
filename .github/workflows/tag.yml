@@ -1,4 +1,4 @@
-name: Tag version
+name: Update data version tag
 
 on:
   push:
